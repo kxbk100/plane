@@ -324,7 +324,6 @@ class PlanePanel extends JPanel implements KeyListener{
 			HeroBullet[] bs = hero.shoot();//打出子弹
 			Hbullets = Arrays.copyOf(Hbullets, Hbullets.length + bs.length); // 扩容
 			System.arraycopy(bs, 0, Hbullets, Hbullets.length - bs.length,bs.length); // 追加数组
-			System.out.println(Hbullets.length);
 		}
 		
 	}
